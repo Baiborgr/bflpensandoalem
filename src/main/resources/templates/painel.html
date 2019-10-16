@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+	<head>
+		<title>admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+    <div class="conteudo" id="conteudo-visualizar">
+    <h1>Visualiza Usuarios</h1>
+    
+    <table border="1">  
+    <tr>
+      <th>N</th>
+      <th>Nome</th>
+      <th>Email</th> 
+      <th>Senha</th>    
+      <th>Excluir</th> 
+      <th>Editar</th>
+    </tr>
+    <tr th:each="u : ${usuarios}">
+      <td th:text=${u.codigo}></td>
+      <td th:text="${u.nome}"></td>  
+      <td th:text="${u.email}"></td>  
+      <td th:text="${u.senha}"></td>
+      <td><a th:href="@{/delete/{codigo}(codigo=${u.codigo})}">Excluir</a></td> 
+      <td><a th:href="@{/editar/{codigo}(codigo=${u.codigo})}">Editar</a></td>
+    </tr>
+         </table>
+    </div>
+	</body>
+	
+</html>
