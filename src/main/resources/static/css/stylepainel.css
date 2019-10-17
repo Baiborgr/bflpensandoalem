@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Russo One', sans-serif;
+}
+body{
+	text-align: center;
+	background-color: #363837;
+}
+#conteudo-visualizar{
+	display: inline-block;
+	width: 600px;
+	background-color: #269e62;
+	padding: 10px;
+	box-sizing: content-box;
+}
+#conteudo-visualizar h1{
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.pai{
+	width: 700px;
+	background-color: #2e2d2c;
+	margin: 13% auto;
+	padding: 15px;
+	box-sizing: content-box;
+}
+.clear{
+	clear: both;
+}
+.button{
+	background-color: #269e62;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 7px 20px;
+}
+.button:hover{
+	background-color: #f5be18;
+	color: #fff;
+}
+a{
+	text-decoration: none;
+}
+table{
+	width: 100%;
+}
